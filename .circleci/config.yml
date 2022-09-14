@@ -35,7 +35,7 @@ jobs:
 workflows:
   # Name of workflow
   workflow_1:
-    # List of jobs that will run
+    # List of jobs that will runs
     jobs:
       - job_1
       
