@@ -10,18 +10,19 @@ jobs:
      - image: cimg/base:2022.05
     steps:
       - run: echo "Say hello to YAML!"
+      - run: echo "Executing step2"
       
   job_2:
     docker:
      - image: cimg/base:2022.05
     steps:
-      - run: echo "Say hello to YAML!"
+      - run: echo "Say hello to YAML job2!"
       
   job_3:
     docker:
      - image: cimg/base:2022.05
     steps:
-      - run: echo "Say hello to YAML!"
+      - run: echo "Say hello to YAML job3!"
   
   job_4:
     docker:
@@ -41,6 +42,8 @@ workflows:
     # List of jobs that will runs
     jobs:
       - job_1
+      - job_2
+      - job_3
       
   workflow_2:
     jobs:
